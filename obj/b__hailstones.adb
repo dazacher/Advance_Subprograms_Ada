@@ -31,6 +31,7 @@ package body ada_main is
    E117 : Short_Integer; pragma Import (Ada, E117, "ada__finalization_E");
    E116 : Short_Integer; pragma Import (Ada, E116, "system__file_io_E");
    E106 : Short_Integer; pragma Import (Ada, E106, "ada__text_io_E");
+   E124 : Short_Integer; pragma Import (Ada, E124, "hail_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -208,6 +209,8 @@ package body ada_main is
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E106 := E106 + 1;
+      Hail'Elab_Body;
+      E124 := E124 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -245,6 +248,7 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
+   --   E:\Users\User\Ada\Advance_Subprograms_Ada\obj\hail.o
    --   E:\Users\User\Ada\Advance_Subprograms_Ada\obj\hailstones.o
    --   -LE:\Users\User\Ada\Advance_Subprograms_Ada\obj\
    --   -LE:\Users\User\Ada\Advance_Subprograms_Ada\obj\

@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#47239702#;
+   u00001 : constant Version_32 := 16#1a746c28#;
    pragma Export (C, u00001, "hailstonesB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -284,38 +284,42 @@ package ada_main is
    pragma Export (C, u00121, "ada__text_io__generic_auxB");
    u00122 : constant Version_32 := 16#48b7189e#;
    pragma Export (C, u00122, "ada__text_io__generic_auxS");
-   u00123 : constant Version_32 := 16#fd83e873#;
-   pragma Export (C, u00123, "system__concat_2B");
-   u00124 : constant Version_32 := 16#2d5a86c4#;
-   pragma Export (C, u00124, "system__concat_2S");
-   u00125 : constant Version_32 := 16#3720d920#;
-   pragma Export (C, u00125, "system__img_biuS");
-   u00126 : constant Version_32 := 16#7a7e1efe#;
-   pragma Export (C, u00126, "system__img_llbS");
-   u00127 : constant Version_32 := 16#15e60e4c#;
-   pragma Export (C, u00127, "system__img_lliS");
-   u00128 : constant Version_32 := 16#0d8feb8c#;
-   pragma Export (C, u00128, "system__img_lllbS");
-   u00129 : constant Version_32 := 16#7e360bb4#;
-   pragma Export (C, u00129, "system__img_llliS");
-   u00130 : constant Version_32 := 16#07fbf280#;
-   pragma Export (C, u00130, "system__img_lllwS");
-   u00131 : constant Version_32 := 16#264c6bf5#;
-   pragma Export (C, u00131, "system__img_llwS");
-   u00132 : constant Version_32 := 16#08fa6212#;
-   pragma Export (C, u00132, "system__img_wiuS");
-   u00133 : constant Version_32 := 16#ae4beccb#;
-   pragma Export (C, u00133, "system__val_intS");
-   u00134 : constant Version_32 := 16#a5b55d2f#;
-   pragma Export (C, u00134, "system__val_unsS");
-   u00135 : constant Version_32 := 16#e37e7d10#;
-   pragma Export (C, u00135, "system__val_llliS");
-   u00136 : constant Version_32 := 16#f82486d6#;
-   pragma Export (C, u00136, "system__val_llluS");
-   u00137 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00137, "system__memoryB");
-   u00138 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00138, "system__memoryS");
+   u00123 : constant Version_32 := 16#d949c9d7#;
+   pragma Export (C, u00123, "hailB");
+   u00124 : constant Version_32 := 16#ea91885b#;
+   pragma Export (C, u00124, "hailS");
+   u00125 : constant Version_32 := 16#fd83e873#;
+   pragma Export (C, u00125, "system__concat_2B");
+   u00126 : constant Version_32 := 16#2d5a86c4#;
+   pragma Export (C, u00126, "system__concat_2S");
+   u00127 : constant Version_32 := 16#3720d920#;
+   pragma Export (C, u00127, "system__img_biuS");
+   u00128 : constant Version_32 := 16#7a7e1efe#;
+   pragma Export (C, u00128, "system__img_llbS");
+   u00129 : constant Version_32 := 16#15e60e4c#;
+   pragma Export (C, u00129, "system__img_lliS");
+   u00130 : constant Version_32 := 16#0d8feb8c#;
+   pragma Export (C, u00130, "system__img_lllbS");
+   u00131 : constant Version_32 := 16#7e360bb4#;
+   pragma Export (C, u00131, "system__img_llliS");
+   u00132 : constant Version_32 := 16#07fbf280#;
+   pragma Export (C, u00132, "system__img_lllwS");
+   u00133 : constant Version_32 := 16#264c6bf5#;
+   pragma Export (C, u00133, "system__img_llwS");
+   u00134 : constant Version_32 := 16#08fa6212#;
+   pragma Export (C, u00134, "system__img_wiuS");
+   u00135 : constant Version_32 := 16#ae4beccb#;
+   pragma Export (C, u00135, "system__val_intS");
+   u00136 : constant Version_32 := 16#a5b55d2f#;
+   pragma Export (C, u00136, "system__val_unsS");
+   u00137 : constant Version_32 := 16#e37e7d10#;
+   pragma Export (C, u00137, "system__val_llliS");
+   u00138 : constant Version_32 := 16#f82486d6#;
+   pragma Export (C, u00138, "system__val_llluS");
+   u00139 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00139, "system__memoryB");
+   u00140 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00140, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -455,6 +459,8 @@ package ada_main is
    --  ada.text_io%b
    --  ada.text_io.generic_aux%s
    --  ada.text_io.generic_aux%b
+   --  hail%s
+   --  hail%b
    --  hailstones%b
    --  END ELABORATION ORDER
 

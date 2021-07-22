@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 45" line=" 106" >
+      <vfs_project>E:\Users\User\Ada\Advance_Subprograms_Ada\advanced_subprogramss.gpr</vfs_project>
+      <vfs_file>E:\Users\User\Ada\Advance_Subprograms_Ada\src\hailstones.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\Users\User\Ada\Advance_Subprograms_Ada\src\hail.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\Users\User\Ada\Advance_Subprograms_Ada\src\hial.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

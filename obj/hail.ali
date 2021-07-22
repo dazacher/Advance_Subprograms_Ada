@@ -1,5 +1,4 @@
 V "GNAT Lib v2021"
-M P W=b
 A -gnatA
 A -mtune=generic
 A -march=x86-64
@@ -15,8 +14,9 @@ RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
 
-U hailstones%b		hailstones.adb		1a746c28 NE OO SU
+U hail%b		hail.adb		d949c9d7 OO PK
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -24,7 +24,6 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 Z ada.text_io.generic_aux%s  a-tigeau.adb	a-tigeau.ali
 Z ada.text_io.integer_aux%s
 Z ada.text_io.integer_io%s
-W hail%s		hail.adb		hail.ali
 W system%s		system.ads		system.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
 Z system.img_biu%s	s-imgbiu.ads		s-imgbiu.ali
@@ -39,6 +38,9 @@ Z system.img_wiu%s	s-imgwiu.ads		s-imgwiu.ali
 Z system.val_int%s	s-valint.ads		s-valint.ali
 Z system.val_lli%s	s-vallli.ads		s-vallli.ali
 Z system.val_llli%s	s-valllli.ads		s-valllli.ali
+
+U hail%s		hail.ads		ea91885b EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
@@ -56,7 +58,7 @@ D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-tiinio.adb		20210520051130 b79731f4 ada.text_io.integer_io%b
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D hail.ads		20210722195558 ea91885b hail%s
-D hailstones.adb	20210722195530 5e11311e hailstones%b
+D hail.adb		20210722200338 9d2c94e1 hail%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D system.ads		20210520051136 2ffa5114 system%s
@@ -97,40 +99,70 @@ D s-valueu.ads		20210520051134 7b8fccf5 system.value_u%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [hailstones standard 23 11 none]
-G r c none [hailstones standard 23 11 none] [next_stone hail 10 13 none]
-G r c none [hailstones standard 23 11 none] [generate_sequence hail 3 13 none]
-G r c none [hailstones standard 23 11 none] [find_longest_sequence hail 6 14 none]
-G r c none [hailstones standard 23 11 none] [get_max_number hail 2 13 none]
-G r c none [hailstones standard 23 11 none] [print_longest_sequence hail 8 14 none]
+G c Z s s [get_max_number hail 2 13 none]
+G c Z s b [generate_sequence hail 3 13 none]
+G c Z s b [find_longest_sequence hail 6 14 none]
+G c Z s b [print_longest_sequence hail 8 14 none]
+G c Z s b [print_counter hail 9 14 none]
+G c Z s b [next_stone hail 10 13 none]
+G c Z b b [get hail__iio 51 14 6_4]
+G c Z b b [get hail__iio 59 14 6_4]
+G c Z b b [put hail__iio 68 14 6_4]
+G c Z b b [put hail__iio 80 14 6_4]
+G c Z b b [get hail__iio 90 14 6_4]
+G c Z b b [put hail__iio 97 14 6_4]
+G c Z b b [get hail__iio__aux_int 52 14 48_4_6_4]
+G c Z b b [gets hail__iio__aux_int 57 14 48_4_6_4]
+G c Z b b [put hail__iio__aux_int 62 14 48_4_6_4]
+G c Z b b [puts hail__iio__aux_int 68 14 48_4_6_4]
+G c Z b b [get hail__iio__aux_lli 52 14 56_4_6_4]
+G c Z b b [gets hail__iio__aux_lli 57 14 56_4_6_4]
+G c Z b b [put hail__iio__aux_lli 62 14 56_4_6_4]
+G c Z b b [puts hail__iio__aux_lli 68 14 56_4_6_4]
+G c Z b b [get hail__iio__aux_llli 52 14 64_4_6_4]
+G c Z b b [gets hail__iio__aux_llli 57 14 64_4_6_4]
+G c Z b b [put hail__iio__aux_llli 62 14 64_4_6_4]
+G c Z b b [puts hail__iio__aux_llli 68 14 64_4_6_4]
+G c Z b b [print_result hail 25 14 none]
+G c Z b b [keeplooping hail 33 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 17|20r6 24r24
+16K9*Ada 20e8 17|1r6 5r24
 X 9 a-textio.ads
-58K13*Text_IO 725e16 17|20w10 24r28
-262U14*New_Line 17|38s31
-463U14*Put 17|37s11
-506U14*Put_Line 17|35s8
+58K13*Text_IO 725e16 17|1w10 5r28
+262U14*New_Line 17|29s11 83s11
+463U14*Put 17|27s11 79s11 81s11
+506U14*Put_Line 17|51s17
 X 13 a-tiinio.ads
-46k21*Integer_IO 108e27 17|25r27
-80U14 Put 17|38s11[25]
+46k21*Integer_IO 108e27 17|6r27
+80U14 Put 17|28s11[6] 78s11[6] 80s11[6] 82s11[6] 87s11[6]
 X 16 hail.ads
-1K9*Hail 12e9 17|21w6 36r8 40r14 41r4 42r4 43r19
-2V13*Get_Max_Number{positive} 17|43s24
-3V13*Generate_Sequence{positive} 17|40s19
-4b7 Output_Enabled{boolean} 17|40r38
-5i7 Start_Value{positive} 17|40r62
-6U14*Find_Longest_Sequence 17|41s9
-8U14*Print_Longest_Sequence 17|42s9
-8i38 Value{positive} 17|42r33
-8i45 Upper_Limit{positive} 17|43r4
-8i58 Longest{positive} 17|44r4
-10V13*Next_Stone{boolean} 17|36s13
-X 17 hailstones.adb
-23U11*Hailstones 23b11 45l5 45t15
-24K12 TIO=24:28 25r23 35r4 37r7 38r27
-25K12 IIO[13|46] 38r7
-29i4 Test_Value{positive} 35r58 36m24 36r24 38r15 40r77
-30i4 Length{positive} 40m4
-31i4 Longest_Value{positive} 41m31 42r42
-31i19 Longest_Length{positive} 41m46 44r15
+1K9*Hail 12l5 12e9 17|3b14 91l5 91t9
+2V13*Get_Max_Number{positive} 17|60s28
+3V13*Generate_Sequence{positive} 4>7 5>7 17|39b13 56l8 56t25 66s20
+4b7 Output_Enabled{boolean} 17|40b7 47r13
+5i7 Start_Value{positive} 17|41b7 42r27 66r39
+6U14*Find_Longest_Sequence 7<7 7<22 17|59b14 73l8 73t29
+7i7 Longest_Value{positive} 17|59b37 63m7 69m13
+7i22 Longest_Length{positive} 17|59b52 64m7 67r22 68m13
+8U14*Print_Longest_Sequence 8>38 8>45 8>58 17|76b14 84l8 84t30
+8i38 Value{positive} 17|76b38 78r16
+8i45 Upper_Limit{positive} 17|76b45 80r16
+8i58 Longest{positive} 17|76b58 82r16
+9U14*Print_Counter 17|85b14 88l8 88t21
+10V13*Next_Stone{boolean} 11=7 17|11b13 22l8 22t18 45s13
+11i7 This_Number{positive} 17|11b25 13r10 15r14 16m10 16r25 18m10 18r26
+X 17 hail.adb
+5K12 TIO=5:28 6r23 27r7 29r7 51r13 79r7 81r7 83r7
+6K12 IIO[13|46] 28r7 78r7 80r7 82r7 87r7
+8i4 MAX_STEP{positive} 35r29 52r20
+9i4 Counter{natural} 20m7 20r18 87r15 90m4
+25U14 Print_Result 25b14 25>28 25>34 30l8 30t20 48s13
+25i28 Step{positive} 27r42
+25i34 Sequence_Value{positive} 28r16
+33V13 KeepLooping{boolean} 33b13 33>26 36l8 36t19 50s14
+33i26 Current_Step{positive} 35r14
+42i7 Value{positive} 45m25 45r25 48r33
+43i7 Step{positive} 46m10 46r18 48r27 50r27 55r14
+60i7 Value{positive} 65r13 66r54 69r31 71m10 71r20
+61i7 Length{positive} 66m10 67r13 68r31
 
