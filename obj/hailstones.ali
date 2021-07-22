@@ -1,0 +1,140 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U hailstones%b		hailstones.adb		47239702 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.generic_aux%s  a-tigeau.adb	a-tigeau.ali
+Z ada.text_io.integer_aux%s
+Z ada.text_io.integer_io%s
+W system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_biu%s	s-imgbiu.ads		s-imgbiu.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.img_llb%s	s-imgllb.ads		s-imgllb.ali
+Z system.img_lli%s	s-imglli.ads		s-imglli.ali
+Z system.img_lllb%s	s-imglllb.ads		s-imglllb.ali
+Z system.img_llli%s	s-imgllli.ads		s-imgllli.ali
+Z system.img_lllw%s	s-imglllw.ads		s-imglllw.ali
+Z system.img_llw%s	s-imgllw.ads		s-imgllw.ali
+Z system.img_wiu%s	s-imgwiu.ads		s-imgwiu.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+Z system.val_lli%s	s-vallli.ads		s-vallli.ali
+Z system.val_llli%s	s-valllli.ads		s-valllli.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tigeau.ads		20210520051130 e643cdf3 ada.text_io.generic_aux%s
+D a-tiinau.ads		20210520051130 1c79f78d ada.text_io.integer_aux%s
+D a-tiinau.adb		20210520051130 89004916 ada.text_io.integer_aux%b
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-tiinio.adb		20210520051130 b79731f4 ada.text_io.integer_io%b
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D hailstones.adb	20210722150352 e9d7426f hailstones%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-imageb.ads		20210520051134 3953e0e6 system.image_b%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imagew.ads		20210520051134 9d2dd267 system.image_w%s
+D s-imgbiu.ads		20210520051134 0a8e1c41 system.img_biu%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-imgllb.ads		20210520051134 47d0db9f system.img_llb%s
+D s-imglli.ads		20210520051134 3723d9ff system.img_lli%s
+D s-imglllb.ads		20210520051134 30212eed system.img_lllb%s
+D s-imgllli.ads		20210520051134 5cf3dc07 system.img_llli%s
+D s-imglllw.ads		20210520051134 9e2b0560 system.img_lllw%s
+D s-imgllw.ads		20210520051134 bf9c9c15 system.img_llw%s
+D s-imgwiu.ads		20210520051134 912a95f2 system.img_wiu%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-valint.ads		20210520051134 e7fcadb7 system.val_int%s
+D s-vallli.ads		20210520051134 0767e6f3 system.val_lli%s
+D s-valllli.ads		20210520051134 f758e795 system.val_llli%s
+D s-vallllu.ads		20210520051134 87566fa4 system.val_lllu%s
+D s-valllu.ads		20210520051134 660d930f system.val_llu%s
+D s-valuns.ads		20210520051134 dac7b45d system.val_uns%s
+D s-valuei.ads		20210520051134 978dd0a6 system.value_i%s
+D s-valueu.ads		20210520051134 7b8fccf5 system.value_u%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [hailstones standard 22 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|20r6 23r24
+X 9 a-textio.ads
+58K13*Text_IO 725e16 16|20w10 23r28
+262U14*New_Line 16|47s11 101s11 113s31
+463U14*Put 16|45s11 97s11 99s11 112s11
+506U14*Put_Line 16|69s17 110s8
+X 13 a-tiinio.ads
+46k21*Integer_IO 108e27 16|24r27
+80U14 Put 16|46s11[24] 96s11[24] 98s11[24] 100s11[24] 113s11[24]
+X 16 hailstones.adb
+22U11*Hailstones 22b11 120l5 120t15
+23K12 TIO=23:28 24r23 45r7 47r7 69r13 97r7 99r7 101r7 110r4 112r7 113r27
+24K12 IIO[13|46] 46r7 96r7 98r7 100r7 113r7
+26i4 MAX_STEP{positive} 53r29 70r20
+28i4 MAX_NUMBER_TEST{positive} 78r28 118r19
+30V13 Next_Stone{boolean} 30b13 30=25 40l8 40t18 63s13 111s8
+30i25 This_Number{positive} 32r10 34r14 35m10 35r25 37m10 37r26
+43U14 Print_Result 43b14 43>28 43>34 48l8 48t20 66s13
+43i28 Step{positive} 45r42
+43i34 Sequence_Value{positive} 46r16
+51V13 KeepLooping{boolean} 51b13 51>26 54l8 54t19 68s14
+51i26 Current_Step{positive} 53r14
+57V13 Generate_Sequence{positive} 57b13 58>7 59>7 74l8 74t25 84s20 115s14
+58b7 Output_Enabled{boolean} 65r13 115r33
+59i7 Start_Value{positive} 60r27 84r39 115r57
+60i7 Value{positive} 63m25 63r25 66r33
+61i7 Step{positive} 64m10 64r18 66r27 68r27 73r14
+77U14 Find_Longest_Sequence 77b14 77<37 77<52 91l8 91t29 116s4
+77i37 Longest_Value{positive} 81m7 87m13
+77i52 Longest_Length{positive} 82m7 85r22 86m13
+78i7 Value{positive} 83r13 84r54 87r31 89m10 89r20
+79i7 Length{positive} 84m10 85r13 86r31
+94U14 Print_Longest_Sequence 94b14 94>38 94>45 94>58 102l8 102t30 117s4
+94i38 Value{positive} 96r16 117r28
+94i45 Upper_Limit{positive} 98r16 118r4
+94i58 Longest{positive} 100r16 119r4
+104i4 Test_Value{positive} 110r58 111m19 111r19 113r15 115r72
+105i4 Length{positive} 115m4
+106i4 Longest_Value{positive} 116m26 117r37
+106i19 Longest_Length{positive} 116m41 119r15
+
